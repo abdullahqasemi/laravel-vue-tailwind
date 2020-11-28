@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <table class="table w-full">
     <thead>
       <tr>
          <td>id</td>
