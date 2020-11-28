@@ -1,7 +1,7 @@
 <template>
   <table class="table w-full">
     <thead>
-      <tr class="h-10 bg-blue-200 text-center">
+      <tr class="h-10 bg-blue-200">
          <td>id</td>
          <td>name</td>
          <td>email</td>
