@@ -21638,6 +21638,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+td{
+  padding: 0.75rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
