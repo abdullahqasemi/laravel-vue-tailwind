@@ -124,6 +124,15 @@ __webpack_require__.r(__webpack_exports__);
           "last": "Jensen"
         },
         "email": "elisa.jensen@undefined.co.uk"
+      }, {
+        "_id": "5e00fde24086e927d70a3f68",
+        "isActive": true,
+        "picture": "http://placehold.it/32x32",
+        "name": {
+          "first": "Elisa",
+          "last": "Jensen"
+        },
+        "email": "elisa.jensen@undefined.co.uk"
       }]
     };
   }
@@ -620,13 +629,24 @@ var render = function() {
     _c(
       "tbody",
       _vm._l(_vm.users, function(user) {
-        return _c("tr", { key: user._id, staticClass: "h-10" }, [
-          _c("td", [_vm._v(_vm._s(user._id))]),
-          _vm._v(" "),
-          _c("td", [_vm._v(_vm._s(user.name.first + " " + user.name.last))]),
-          _vm._v(" "),
-          _c("td", [_vm._v(_vm._s(user.email))])
-        ])
+        return _c(
+          "tr",
+          {
+            key: user._id,
+            staticClass: "h-10",
+            class: {
+              "bg-red-100": user.isActive,
+              "bg-blue-100": !user.isActive
+            }
+          },
+          [
+            _c("td", [_vm._v(_vm._s(user._id))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(user.name.first + " " + user.name.last))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(user.email))])
+          ]
+        )
       }),
       0
     )
