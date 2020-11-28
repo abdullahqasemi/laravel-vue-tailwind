@@ -9,7 +9,7 @@
     </thead>
     <tbody>
       <tr v-for="user in users" v-bind:key="user._id"><td>{{user._id}}</td>
-        <td>{{user.name.first}}</td>
+        <td>{{user.name.first +' '+  user.name.last}}</td>
         <td>{{user.email}}</td>
       </tr>
     </tbody>

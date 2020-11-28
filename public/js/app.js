@@ -623,7 +623,7 @@ var render = function() {
         return _c("tr", { key: user._id }, [
           _c("td", [_vm._v(_vm._s(user._id))]),
           _vm._v(" "),
-          _c("td", [_vm._v(_vm._s(user.name.first))]),
+          _c("td", [_vm._v(_vm._s(user.name.first + " " + user.name.first))]),
           _vm._v(" "),
           _c("td", [_vm._v(_vm._s(user.email))])
         ])
