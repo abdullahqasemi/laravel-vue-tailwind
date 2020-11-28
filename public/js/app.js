@@ -620,7 +620,7 @@ var render = function() {
     _c(
       "tbody",
       _vm._l(_vm.users, function(user) {
-        return _c("tr", { key: user._id }, [
+        return _c("tr", { key: user._id, staticClass: "h-10" }, [
           _c("td", [_vm._v(_vm._s(user._id))]),
           _vm._v(" "),
           _c("td", [_vm._v(_vm._s(user.name.first + " " + user.name.last))]),
@@ -638,7 +638,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [
+      _c("tr", { staticClass: "h-10 bg-blue-200" }, [
         _c("td", [_vm._v("id")]),
         _vm._v(" "),
         _c("td", [_vm._v("name")]),
